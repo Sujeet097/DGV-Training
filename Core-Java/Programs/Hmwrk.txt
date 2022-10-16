@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+	class Player{
+	private String name;
+      private String game;
+	private int high_Score;
+	private int birth_Year;
+
+
+      Scannner Sc = new Scanner(System.in);
+      
+      
+      public void setDetails(){
+
+      name=	Sc.nextLine();
+      game=Sc.nextLine();
+      high_Score=Sc.nextInt();
+      birth_Year=Sc.nextInt();
+      
+      }
+
+      public void getDetails(){
+       System.out.println(name);
+       System.out.println(game);
+       System.out.println(high_Score);
+       System.out.println(birth_Year);
+
+      
+
+      }
+      
+      public String getgame(){
+return game;
+}
+
+public void setgame(String g){
+game = g;
+}
+
+}    
+
+class Hmwrk{
+public static void main(String args[]){
+Scanner sc = new Scanner(System.in);
+
+Player p = new Player();
+String game = sc.nextLine();
+p.setgame(game);
+System.out.println(p.getgame());
+
+	}
+}
